@@ -1,0 +1,3 @@
+rootProject.name = 'UiKitOne'
+
+include ':app'
