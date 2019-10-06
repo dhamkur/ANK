@@ -1,26 +1,13 @@
 import React, { Component } from "react";
-import { TouchableOpacity, Text, StyleSheet } from "react-native";
+import { TouchableOpacity, Text } from "react-native";
+import styles from "./styles";
 
 export default class Button extends Component {
   render() {
     return (
-      <TouchableOpacity onPress={this.props.onPress} style={styles.warning}>
-        <Text style={styles.warningText}>{this.props.children}</Text>
+      <TouchableOpacity onPress={this.props.onPress} style={styles.btnWarning}>
+        <Text style={styles.btnWarningText}>{this.props.children}</Text>
       </TouchableOpacity>
     )
   }
 }
-
-const styles = StyleSheet.create({
-  warning: {
-    padding: 10,
-    borderRadius: 5,
-    backgroundColor: "#f2d319"
-  },
-  warningText: {
-    fontSize: 16,
-    fontWeight: "600",
-    textAlign: "center",
-    color: "#fff"
-  }
-});

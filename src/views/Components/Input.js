@@ -1,16 +1,11 @@
 import React, { Component } from "react";
 import { View, TextInput } from "react-native";
+import styles from "./styles";
 
 export default class Input extends Component {
   render() {
     return (
-      <View
-        style={{
-          borderWidth: 1,
-          borderColor: "#ddd",
-          borderRadius: 5
-        }}
-      >
+      <View style={styles.formControl}>
         <TextInput
           underlineColorAndroid="transparent"
           autoCapitalize={this.props.autoCapitalize}

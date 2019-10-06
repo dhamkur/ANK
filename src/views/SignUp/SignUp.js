@@ -5,18 +5,19 @@ import FormGroup from "../Components/FormGroup";
 import Input from "../Components/Input";
 import ButtonInfo from "../Components/ButtonInfo";
 import ButtonDefault from "../Components/ButtonDefault";
+import styles from "../Login/styles";
 
 export default class SignUp extends Component {
   render() {
     return (
-      <ScrollView style={{ backgroundColor: "#fff", flex: 1 }}>
-        <View style={{ padding: 25 }}>
-          <View style={{ marginTop: 60, marginBottom: 30 }}>
-            <Image source={require("../../assets/img/acme.png")} style={{ marginBottom: 30, width: 155, height: 43 }} />
-            <Text style={{ fontSize: 32, fontWeight: "600", color: "#494949" }}>
-              Welcome, <Text style={{ color: "#cecece" }}>create new account</Text>
+      <ScrollView style={styles.bgLogin}>
+        <View style={styles.containerLogin}>
+          <View style={styles.headerLogin}>
+            <Image source={require("../../assets/img/acme.png")} style={styles.logoLogin} />
+            <Text style={styles.titleLogin1}>
+              Welcome, <Text style={styles.colorGrey}>sign in to</Text>
             </Text>
-            <Text style={{ fontSize: 32, fontWeight: "600", color: "#cecece" }}>continue</Text>
+            <Text style={styles.titleLogin2}>continue</Text>
           </View>
 
           <FormGroup>
@@ -29,8 +30,8 @@ export default class SignUp extends Component {
             <Input placeholder="Password Confirmation" secureTextEntry={true} />
           </FormGroup>
           <FormGroup>
-            <ButtonInfo>
-              Login
+            <ButtonInfo onPress={() => Actions.HomePage()}>
+              Sign Up
             </ButtonInfo>
           </FormGroup>
           <FormGroup>

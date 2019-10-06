@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { View } from "react-native";
+import styles from "./styles";
 
 export default class FormGroup extends Component {
   render() {
     return (
-      <View style={{ paddingTop: 10, paddingBottom: 10 }}>
+      <View style={styles.formGroup}>
         {this.props.children}
       </View>
     )
