@@ -13,7 +13,7 @@ export default class SignUp extends Component {
       <ScrollView style={styles.bgLogin}>
         <View style={styles.containerLogin}>
           <View style={styles.headerLogin}>
-            <Image source={require("../../assets/img/acme.png")} style={styles.logoLogin} />
+            <Image source={require("../../assets/img/ank.png")} style={styles.logoLogin} />
             <Text style={styles.titleLogin1}>
               Welcome, <Text style={styles.colorGrey}>sign in to</Text>
             </Text>
