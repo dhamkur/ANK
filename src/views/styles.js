@@ -105,6 +105,20 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     backgroundColor: "#00E39C",
     alignItems: "center"
+  },
+  bgReports: {
+    flex: 1,
+    backgroundColor: "#fff",
+    position: "relative"
+  },
+  containerReportsHeader: {
+    marginBottom: 30
+  },
+  titleReport1: {
+    color: "#5236A7",
+    fontFamily: "Roboto",
+    fontSize: 28,
+    fontWeight: "600"
   }
 });
 

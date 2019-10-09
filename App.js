@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { StyleSheet } from "react-native";
-import { Router, Scene } from "react-native-router-flux";
+import { Router, Scene, Tabs } from "react-native-router-flux";
 import TabIcon from "./src/views/Components/TabIcon";
 import LoginPage from "./src/views/Login/Login";
 import SignUpPage from "./src/views/SignUp/SignUp";
 import HomePage from "./src/views/Home/Home";
+import ReportsPage from './src/views/Reports/Reports';
 
 export default class App extends Component {
   render() {
@@ -24,30 +25,31 @@ export default class App extends Component {
             title="SignUpPage"
             hideNavBar={true}
           />
-          <Scene
-            key="main"
-            tabs={true}
+          <Tabs
+            key="tabbar"
+            tabs
             tabBarStyle={styles.tabBar}
+            tabBarPosition="bottom"
             hideNavBar={true}
             showLabel={false}
           >
             <Scene
               key="HomePage"
               component={HomePage}
-              selected
+              focused
               name="home"
               icon={TabIcon}
               hideNavBar={true}
             />
             <Scene
-              key="TransactionPage"
-              // component={HomePage}
-              selected
+              key="ReportsPage"
+              component={ReportsPage}
+              focused
               name="bar-chart"
               icon={TabIcon}
               hideNavBar={true}
             />
-          </Scene>
+          </Tabs>
         </Scene>
       </Router>
     );
@@ -55,19 +57,7 @@ export default class App extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
   tabBar: {
-    backgroundColor: "#E8F0FE",
-    borderTopLeftRadius: 50,
-    borderTopRightRadius: 50,
-    opacity: 1
-  },
-  navigationBarStyle: {
-    backgroundColor: "red",
-  },
-  navigationBarTitleStyle: {
-    color: "white",
-  },
+    backgroundColor: "#E8F0FE"
+  }
 });

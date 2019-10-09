@@ -189,13 +189,29 @@ var styles = StyleSheet.create({
     textAlign: "center",
     color: "#fff"
   },
+  btnOutlineCust1: {
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingLeft: 15,
+    paddingRight: 15,
+    backgroundColor: "#fff",
+    borderRadius: 30,
+    borderColor: "#5236A7",
+    borderWidth: 2
+  },
+  btnOutlineCust1Text: {
+    fontSize: 16,
+    fontWeight: "600",
+    textAlign: "center",
+    color: "#5236A7"
+  },
   listBox: {
     padding: 16,
     borderRadius: 10,
     alignItems: "center",
   },
   listTitle: {
-    color: "#401f5c",
+    color: "#424345",
     fontSize: 18,
     fontWeight: "600"
   },
