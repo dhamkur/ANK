@@ -2,12 +2,15 @@ import { StyleSheet } from "react-native";
 
 var styles = StyleSheet.create({
   container: {
+    flex: 1,
     padding: 30
   },
   containerFluid: {
+    flex: 1,
     padding: 15
   },
   containerDeep: {
+    flex: 1,
     padding: 45
   },
   row: {
@@ -118,6 +121,17 @@ var styles = StyleSheet.create({
     borderColor: "#ddd",
     borderRadius: 5
   },
+  custSelectFormGroup: {
+    marginLeft: -9
+  },
+  custSelectCaret: {
+    position: "absolute",
+    top: 18,
+    right: 220
+  },
+  custSelect: {
+    backgroundColor: "#fff",
+  },
   btnDefault: {
     padding: 10,
     borderRadius: 5,
@@ -174,6 +188,21 @@ var styles = StyleSheet.create({
     fontWeight: "600",
     textAlign: "center",
     color: "#fff"
+  },
+  listBox: {
+    padding: 16,
+    borderRadius: 10,
+    alignItems: "center",
+  },
+  listTitle: {
+    color: "#401f5c",
+    fontSize: 18,
+    fontWeight: "600"
+  },
+  listCategory: {
+    color: "#b8b8b8",
+    fontSize: 16,
+    fontWeight: "600"
   }
 });
 

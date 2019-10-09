@@ -5,7 +5,7 @@ import FormGroup from "../Components/FormGroup";
 import Input from "../Components/Input";
 import ButtonInfo from "../Components/ButtonInfo";
 import ButtonDefault from "../Components/ButtonDefault";
-import styles from "../Login/styles";
+import styles from "../styles";
 
 export default class SignUp extends Component {
   render() {
