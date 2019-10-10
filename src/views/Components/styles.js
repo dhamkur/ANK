@@ -189,6 +189,17 @@ var styles = StyleSheet.create({
     textAlign: "center",
     color: "#fff"
   },
+  btnSuccess: {
+    padding: 10,
+    borderRadius: 5,
+    backgroundColor: "#00E39C"
+  },
+  btnSuccessText: {
+    fontSize: 16,
+    fontWeight: "600",
+    textAlign: "center",
+    color: "#fff"
+  },
   btnOutlineCust1: {
     paddingTop: 10,
     paddingBottom: 10,
@@ -223,6 +234,43 @@ var styles = StyleSheet.create({
   listDate: {
     color: "#b8b8b8",
     fontSize: 12,
+    fontWeight: "600"
+  },
+  card: {
+    borderColor: "#ddd",
+    borderWidth: 1,
+    borderRadius: 12
+  },
+  cardHeader: {
+    padding: 15,
+    backgroundColor: "#5236A7",
+    borderTopLeftRadius: 12,
+    borderTopRightRadius: 12
+  },
+  cardTitle: {
+    color: "#fff",
+    fontSize: 18,
+    fontWeight: "600"
+  },
+  cardTitleSecondary: {
+    color: "#fff",
+    fontSize: 14,
+    fontWeight: "400"
+  },
+  cardBody: {
+    padding: 15,
+    backgroundColor: "#fff",
+    borderBottomLeftRadius: 12,
+    borderBottomRightRadius: 12
+  },
+  listTransparent: {
+    padding: 20,
+    borderBottomWidth: 1,
+    borderColor: "#ddd"
+  },
+  listTitleTransparent: {
+    fontSize: 20,
+    color: "#5236A7",
     fontWeight: "600"
   }
 });

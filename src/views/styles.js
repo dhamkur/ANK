@@ -106,15 +106,15 @@ const styles = StyleSheet.create({
     backgroundColor: "#00E39C",
     alignItems: "center"
   },
-  bgReports: {
+  bgScreen: {
     flex: 1,
     backgroundColor: "#fff",
     position: "relative"
   },
-  containerReportsHeader: {
+  containerHeader: {
     marginBottom: 30
   },
-  titleReport1: {
+  titlePage1: {
     color: "#5236A7",
     fontFamily: "Roboto",
     fontSize: 28,

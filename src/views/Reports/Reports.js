@@ -10,10 +10,10 @@ import styles from "../styles";
 export default class Reports extends Component {
   render() {
     return (
-      <ScrollView style={styles.bgReports}>
+      <ScrollView style={styles.bgScreen}>
         <Container>
-          <View style={styles.containerReportsHeader}>
-            <Text style={styles.titleReport1}>Reports</Text>
+          <View style={styles.containerHeader}>
+            <Text style={styles.titlePage1}>Reports</Text>
           </View>
           <Row>
             <Column4>
