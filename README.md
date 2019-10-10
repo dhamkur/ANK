@@ -1,6 +1,6 @@
 # ANK React Native
 
-[](src/assets/img/ss.png)
+![](src/assets/img/ss.png)
 
 Guide to use:
 1. Download or Clone this repository
