@@ -6,7 +6,7 @@ export default class TabIcon extends Component {
   render() {
     return (
       <View style={{ flex: 1, flexDirection: "column", alignItems: "center", alignSelf: "center", justifyContent: "center" }}>
-        <Icon style={{ color: this.props.focused ? "#8374C8" : "#AFB3C2" }} name={this.props.name || "circle"} size={32} />
+        <Icon style={{ color: this.props.focused ? "#8374C8" : "#AFB3C2" }} name={this.props.name || "circle"} size={22} />
         {
           /**
            <Text style={{ color: color, fontSize: 12 }}>{this.props.titleBar}</Text>

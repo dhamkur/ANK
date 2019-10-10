@@ -20,6 +20,7 @@ export default class List extends Component {
           <Column5>
             <Text style={styles.listTitle}>{this.props.title}</Text>
             <Text style={styles.listCategory}>{this.props.category}</Text>
+            <Text style={styles.listDate}>{this.props.date}</Text>
           </Column5>
           <Column4>
             <Text style={styles.listTitle}>{this.props.currency}</Text>

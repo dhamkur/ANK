@@ -5,7 +5,9 @@ import TabIcon from "./src/views/Components/TabIcon";
 import LoginPage from "./src/views/Login/Login";
 import SignUpPage from "./src/views/SignUp/SignUp";
 import HomePage from "./src/views/Home/Home";
-import ReportsPage from './src/views/Reports/Reports';
+import ReportsPage from "./src/views/Reports/Reports";
+import SavingPage from "./src/views/Saving/Saving";
+import UserPage from "./src/views/User/User";
 
 export default class App extends Component {
   render() {
@@ -49,6 +51,22 @@ export default class App extends Component {
               icon={TabIcon}
               hideNavBar={true}
             />
+            <Scene
+              key="SavingPage"
+              component={SavingPage}
+              focused
+              name="briefcase"
+              icon={TabIcon}
+              hideNavBar={true}
+            />
+            <Scene
+              key="UserPage"
+              component={UserPage}
+              focused
+              name="user"
+              icon={TabIcon}
+              hideNavBar={true}
+            />
           </Tabs>
         </Scene>
       </Router>
@@ -58,6 +76,7 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
   tabBar: {
-    backgroundColor: "#E8F0FE"
+    backgroundColor: "#E8F0FE",
+    height: 65
   }
 });

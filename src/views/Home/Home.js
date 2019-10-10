@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { ScrollView, View, Text, TouchableOpacity, ImageBackground } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import NumberFormat from "react-number-format";
-import { Actions } from "react-native-router-flux";
 import ContainerDeep from "../Components/ContainerDeep";
 import Row from "../Components/Row";
 import List from "../Components/List";
@@ -29,7 +28,6 @@ export default class Home extends Component {
   }
 
   render() {
-    console.log(Actions.currentScene === "_ReportsPage" ? true : false);
     return (
       <ScrollView style={styles.bgHome}>
         <ContainerDeep>
@@ -88,10 +86,10 @@ export default class Home extends Component {
               <Item label="This Month" value="this_month" />
             </Select>
 
-            <List bgColor="#AD97F2" iconName="shopping-cart" iconColor="#fff" title="Walmart" category="Shopping" currency="$350.00" />
-            <List bgColor="#89CEF4" iconName="apple" iconColor="#fff" title="iTunes" category="Entertainments" currency="$25.00" />
-            <List bgColor="#FFA565" iconName="credit-card-alt" iconColor="#fff" title="ATM" category="Withdrawals" currency="$25.00" />
-            <List bgColor="#AD97F2" iconName="shopping-cart" iconColor="#fff" title="USB Flashdisk" category="Shopping" currency="$10.00" />
+            <List bgColor="#AD97F2" iconName="shopping-cart" iconColor="#fff" title="Walmart" category="Shopping" date="1 Oct 2019" currency="$350.00" />
+            <List bgColor="#89CEF4" iconName="apple" iconColor="#fff" title="iTunes" category="Entertainments" date="30 Sept 2019" currency="$25.00" />
+            <List bgColor="#FFA565" iconName="credit-card-alt" iconColor="#fff" title="ATM" category="Withdrawals" date="25 Sept 2019" currency="$25.00" />
+            <List bgColor="#AD97F2" iconName="shopping-cart" iconColor="#fff" title="USB Flashdisk" category="Shopping" date="20 Sept 2019" currency="$10.00" />
           </ContainerDeep>
         </View>
       </ScrollView>

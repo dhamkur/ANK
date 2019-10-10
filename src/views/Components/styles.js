@@ -217,7 +217,12 @@ var styles = StyleSheet.create({
   },
   listCategory: {
     color: "#b8b8b8",
-    fontSize: 16,
+    fontSize: 14,
+    fontWeight: "600"
+  },
+  listDate: {
+    color: "#b8b8b8",
+    fontSize: 12,
     fontWeight: "600"
   }
 });
